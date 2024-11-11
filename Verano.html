@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/pngtree-glitch-distorted-letter-s-broken-pixel-effect-png-image_6007978.jpg" type="">
+    <link rel="stylesheet" href="stylese.css">
+    <title>Temporada Verano</title>
+</head>
+<body>
+    <h1>Temporada Verano</h1>
+    <div class="center">
+        <input type="checkbox" id="muestra">
+        <label for="muestra" class="muestrah">Iniciar sesión</label>
+        <div class="container">
+            <label for="muestra" class="cierreh" title="cierre">Cerrar</label>
+                <div class="text">Iniciar sesion</div>
+            <form action="#">
+                <div class="data">
+                    <input type="email" placeholder="Ingresar Email" required>
+                </div>
+                <div class="data">
+                    <input type="password" placeholder="Ingresar contraseña" required>
+                </div>
+                <div class="Olvidaste-contraseña">
+                    <a href="#">Olvidaste la contraseña?</a>
+                </div>
+                <div class="btn">
+                    <div class="inner">
+
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</body>
+</html>
