@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+/* Contenedor principal del carrusel */
+.carrusel {
+  display: flex;
+  overflow-x: auto;           /* Permite el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Configuración de ajuste de desplazamiento */
+  gap: 20px;                  /* Espacio entre cada elemento */
+  padding: 20px;
+}
+
+.carrusel-item {
+  flex: 0 0 70%;              /* Define el tamaño de cada elemento (70% del contenedor) */
+  max-width: 600px;           /* Tamaño máximo del carrusel */
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: center;  /* Ajuste al centro al hacer scroll */
+  position: relative;
+  transition: transform 0.3s; /* Transición para el hover */
+}
+
+.carrusel-item:hover {
+  transform: scale(1.05);     /* Agranda el elemento al pasar el cursor */
+}
+
+/* Imagen dentro de cada elemento */
+.carrusel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;          /* Ajusta la imagen dentro del contenedor */
+  opacity: 0.8;               /* Da un ligero efecto de transparencia */
+  transition: opacity 0.3s;
+}
+
+.carrusel-item:hover img {
+  opacity: 1;                 /* Cambia la opacidad al pasar el cursor */
+}
+
+/* Contenido de texto en cada elemento */
+.contenido {
+  padding: 15px;
+  text-align: left;
+}
+
+.contenido h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.contenido p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+} 
