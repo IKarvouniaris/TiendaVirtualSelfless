@@ -1,0 +1,266 @@
+@font-face {
+    font-family: "Undertown";
+    src: url(UNDERTOWN\ PERSONAL\ USE.ttf);
+}
+  
+* {
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+  
+.encabezado {
+    display: grid;
+    padding: 10px;
+    text-align: center;
+    background-color: #ece5ce;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+  
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+  
+h1 {
+    flex-grow: 1;
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-left: 10%;
+    line-height: 1;
+    color: black;
+    
+}
+  
+.btn-iniciar-sesion {
+    background-color:rgba(0, 0, 0, 0.086);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-size:large;
+    font-weight: bold;
+    justify-content: center;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    
+  
+}
+  
+.btn-iniciar-sesion:hover {
+    background-color: #9e03bd;
+    color: white;
+    border:none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+  
+.bar {
+    background: rgba(0, 0, 0, 0.086);
+    font-family: "Rubik", serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    
+}
+  
+.bar li {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.text-reseñas {
+    margin: 10px;
+    font-family: "Rubik", serif;
+    text-align: center;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.reseñas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.opinion {
+    border: 1px solid #272525;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cuadro img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:  2px solid #111;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .opinion {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .opinion {
+        width: 100%;
+    }
+}
+
+.rating {
+    color: gold;
+}
+
+#footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  
+.upper-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+}
+  
+.upper-footer div {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+  
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+  
+.lista {
+    list-style: none;
+    padding: 0;
+}
+  
+.lista li {
+    margin-bottom: 5px;
+}
+  
+.lista a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+  
+.lista a:hover {
+    color: #0056b3;
+}
+  
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+  
+.iconos-footer img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+  
+.iconos-footer img:hover {
+    transform: scale(1.2);
+}
+  
+.pago-footer {
+    text-align: center;
+}
+  
+.icons-pago {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+  
+.icons-pago img {
+    width: 55px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+  
+.icons-pago img:hover {
+    transform: scale(1.1);
+}
+  
+@media (max-width: 768px) {
+    .icons-pago img {
+        width: 45px;
+    }
+    .icons-pago {
+        gap: 10px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .icons-pago img {
+        width: 35px;
+    }
+}
+  
+.ubicacion-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+  
+  .ubicacion-footer iframe {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+  
+.disclaimer-footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
